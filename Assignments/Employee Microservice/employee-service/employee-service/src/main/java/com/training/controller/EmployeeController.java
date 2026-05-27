@@ -28,6 +28,7 @@ public class EmployeeController {
     @GetMapping
     public List<Employee> getAll() {
         return service.getAll();
+
     }
 
     @PutMapping("/{id}")
