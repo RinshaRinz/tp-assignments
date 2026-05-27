@@ -1,6 +1,6 @@
 package com.example.banking;
 
-import com.example.results.TransactionResults;
+import com.example.banking.results.TransactionResults;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
