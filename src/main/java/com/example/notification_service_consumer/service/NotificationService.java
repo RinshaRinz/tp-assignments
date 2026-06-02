@@ -11,6 +11,7 @@ public class NotificationService {
             groupId = "notification-group"
     )
     public void consume(String message){
+
         System.out.println("Notification Service Received : " + message);
     }
 }
