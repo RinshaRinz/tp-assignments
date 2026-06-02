@@ -11,7 +11,7 @@ public class OrderProducerService {
     @Autowired
     private KafkaTemplate<String, Object> kafkaTemplate;
 
-    public void publishOrder(OrderDto order){
+    public void publishOrder(String order){
         kafkaTemplate.send("order-events", order);
     }
 

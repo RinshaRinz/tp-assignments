@@ -13,9 +13,9 @@ public class OrderController {
     @Autowired
     private OrderProducerService producer;
 
-    @PostMapping
-    public String createOrder(@RequestBody OrderDto order){
-        producer.publishOrder(order);
+    @PostMapping("/{orderId}")
+    public String createOrder(@PathVariable String orderId) {
+        producer.publishOrder(orderId);
         producer.publishStatus("ORDER_CREATED");
         return "Order Event Published";
     }
