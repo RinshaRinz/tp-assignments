@@ -20,4 +20,10 @@ public class OrderProducerService {
     }
 
 
+    public void sendOrder(OrderDto order) {
+        kafkaTemplate.send("order-events-1", order);
+        System.out.println("Sent Order: " + order.getOrderId());
+    }
+
+
 }
