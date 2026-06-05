@@ -10,7 +10,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "orders")
-public class Order {
+public class CustomerOrder {
 
     @Id
     @GeneratedValue
