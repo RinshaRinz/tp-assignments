@@ -1,4 +1,4 @@
-package com.example.order_service_producer_1.repo;
+package com.example.order_service_producer_1.repository;
 
 import com.example.order_service_producer_1.entity.CustomerOrder;
 import org.springframework.data.jpa.repository.JpaRepository;
