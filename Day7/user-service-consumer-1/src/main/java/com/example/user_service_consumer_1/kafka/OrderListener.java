@@ -8,14 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderListener {
 
-//    @KafkaListener(topics = "order-events", groupId = "user-group")
-//    public void consumeOrderStatus(OrderEvent event ){
-//        System.out.println("Order Event " + event.getOrderId() +
-//                " status: " + event.getStatus());
-//    }
-
-
-    @KafkaListener(topics = "order-status-events", groupId = "user-group")
+    @KafkaListener(topics = "order-status-events", groupId = "user-group-new")
     public void consumeOrderStatus(OrderStatusEvent event ){
         System.out.println("Order Status event " + event.getOrderId() +
                 " status: " + event.getStatus());
